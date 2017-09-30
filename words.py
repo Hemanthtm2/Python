@@ -1,0 +1,9 @@
+#!/usr/bin/python 
+
+word=raw_input("ENTER THE WORD")
+if word < "banana":
+  print "Your word," + word + ", comes before banana."
+elif word > "banana":
+  print "Your word," + word + ", comes after banana."
+else:
+  print "Yes, we have no bananas!"
