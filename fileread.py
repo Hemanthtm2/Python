@@ -11,3 +11,4 @@ f=open("name.txt","r")
 #print "\n", f.read()
 
 print f.read(7)
+print f.read(1000004)
