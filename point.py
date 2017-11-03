@@ -4,7 +4,7 @@ class Point:
  pass 
  
 blank = Point()
-#print blank
+print blank
 blank.x=3.0
 blank.y=2.0
 print blank.x
