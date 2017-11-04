@@ -24,4 +24,16 @@ def addTime(t1,t2):
 
 print addTime(t1,t2)
 
+ctime=Time()
+ctime.h=9
+ctime.m=14
+ctime.s=50
 
+btime=Time()
+btime.h=3
+btime.m=50
+btime.s=0
+
+doneTime(ctime,btime)
+
+print 
