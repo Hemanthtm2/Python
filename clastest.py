@@ -4,16 +4,35 @@ class Point:
   pass
 
 
-p=Point()
+p1=Point()
 
-p.x=10
+p1.x=10
 
-p.y=20
+p1.y=20
 
-def getPoints(p):
+p2=Point()
+p2.x=15
+p2.y=25
 
- print p.x
- print p.y
+p2=p1
+
+if p1==p2:
+  print True 
+
+else:
+
+  print False
+
+def samePoint(p1,p2):
+
+  if p1.x==p2.x and p1.y==p2.y:
+    print  True
+  else: 
+    print  False 
+
+print samePoint(p1,p2)
 
 
-getPoints(p)
+
+  
+
