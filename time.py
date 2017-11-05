@@ -41,14 +41,24 @@ def addTime(t1,t2):
   sum.hour=t1.hour+t2.hour
   sum.minute=t1.minute+t2.minute
   sum.second=t1.second+t2.second
+
+  if sum.second >= 60:
+    sum.second = sum.second - 60
+    sum.minute = sum.minute + 1
+  if sum.minute >= 60:
+    sum.minute = sum.minute - 60
+    sum.hour = sum.hour + 1
   return sum
 
-#doneTime=addTime(currenttime,breadtime)
-#printTime(doneTime)
+def increment(time,second):
 
-print printTime(time)
-print addTime(t1,t2)
+  time.second=time.second+second
+  
+
+#print printTime(time)
+#print addTime(t1,t2)
 
 doneTime=addTime(currenttime,breadtime)
 
 printTime(doneTime)
+print increment(time,40)
